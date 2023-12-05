@@ -19,6 +19,7 @@ btnNavEl.addEventListener("click", function () {
 // Smooth scrolling animation
 
 const allLinks = document.querySelectorAll("a:link");
+
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
     e.preventDefault();
@@ -30,6 +31,11 @@ allLinks.forEach(function (link) {
         top: 0,
         behavior: "smooth",
       });
+
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
   });
 });
 
