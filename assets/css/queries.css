@@ -1,5 +1,5 @@
 /* ******************** */
-/* BELOW 1344px (Smaller desktops */
+/* BELOW 1344px (Smaller desktops) */
 /* ******************** */
 
 @media (max-width: 84em) {
@@ -112,7 +112,9 @@
     margin-top: 1.2rem;
   }
 
+  /* ******************** */
   /* MOBILE NAV */
+  /* ******************** */
 
   .btn-mobile-nav {
     display: block;
